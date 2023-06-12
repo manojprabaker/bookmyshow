@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 16px;
+}
+.footer-sec {
+  background-color: #313035;
+}
+.footer-top {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-top-inner {
+  color: #fff;
+  margin-right: 13rem;
+  font-size: 17px;
+}
+.footer-top-inner span {
+  margin-left: 15px;
+  font-family: Roboto;
+}
+.footer-contact Button {
+  background-color: rgb(236, 94, 113) !important;
+  font-size: 13px;
+  padding: 8px 17px;
+}
+.footer-help {
+  padding: 19px 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #404043;
+}
+.call,
+.newsletter,
+.booking {
+  text-align: center;
+}
+.call i,
+.newsletter i,
+.booking i {
+  margin-bottom: 10px;
+  color: rgb(153, 153, 153);
+  font-size: 45px;
+}
+.footer-help p {
+  color: rgb(153, 153, 153);
+  font-family: Roboto;
+  font-size: 13px;
+}
+.footer-movies-list h3 {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  margin: 0px 0px 20px;
+  color: rgb(165, 165, 165);
+}
+.footer-movies-list p {
+  font-size: 11px;
+  color: rgb(127, 127, 127);
+  margin: 0px 5px 5px 0px;
+  padding-right: 5px;
+}
+.footer-movies-list {
+  margin: 20px 0;
+}
+.footer-logo-line {
+  width: 100%;
+  height: 1px;
+  background: rgb(93, 93, 95);
+}
+.social-icons {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.social-icons i {
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: #5d5d5f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333338;
+  margin: 0 5px;
+  border-radius: 21px;
+}
+.footer-copyright p {
+  text-align: center;
+  font-size: 11px;
+  color: rgb(127, 127, 127);
+}
+.footer-copyright {
+  padding: 2rem 0;
+}

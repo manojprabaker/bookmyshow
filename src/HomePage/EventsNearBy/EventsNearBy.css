@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.events-nearby-sec {
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+}
+.events-near img {
+  width: 100%;
+  border-radius: 8px;
+}
+h2.events-near-title {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  word-break: break-word;
+  color: #333;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.events-near .name {
+  margin:10px 0;
+  word-break: break-word;
+  color: rgb(34, 34, 34);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+.events-near .place {
+  word-break: break-word;
+  color: rgb(102, 102, 102);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.events-near .dist {
+  word-break: break-word;
+  color: rgb(102, 102, 102);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}

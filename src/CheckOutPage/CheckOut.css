@@ -1,0 +1,369 @@
+.checkout-sec {
+  margin: 2rem 0;
+  background-color: #f2f2f2;
+}
+.snacks-banner {
+  padding-top: 1rem;
+  border-radius: 8px;
+}
+.snacks-banner img {
+  width: 100%;
+  border-radius: 7px;
+}
+.checkout-row {
+  gap: 12px;
+  display: flex;
+}
+.snacks {
+  width: 75%;
+}
+.fnb-container {
+  background: #fff;
+  margin-top: 10px;
+}
+.fnb-title {
+  padding-top: 10px;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 28px;
+  letter-spacing: 3px;
+  font-size: 25px;
+  text-align: center;
+  color: #333;
+}
+.fnb-title span.bite {
+  color: #c02c39;
+  font-weight: 400;
+}
+.fnb-title .sub-title {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.fnb-category {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+.fnb-category span {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #dfe3e7;
+  font-size: 10px;
+  border-radius: 12px;
+  padding: 4px 12px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+.fnb-category span:first-child {
+  border: 1px solid #dc3558;
+  background: #dc3558;
+  color: #fff;
+}
+.combo-details-row {
+  padding: 0 5px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.fnb-combos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-left: 25px;
+}
+.fnb-combos-box {
+  margin: 10px 0;
+  width: 33.3%;
+  text-align: left;
+}
+.fnb-combos-div {
+  width: 85%;
+  color: #666;
+  box-shadow: 2px 2px 2px #f2f2f2;
+  position: relative;
+}
+.fnb-combos-box img {
+  width: 100%;
+}
+.combo-details p:first-child {
+  font-size: 14px;
+  color: #000;
+  font-family: Roboto;
+}
+.combo-details p {
+  float: left;
+  width: 60%;
+  line-height: 15px;
+  color: #666;
+  font-size: 13px;
+  margin: 5px 0;
+}
+.combo-add button {
+  background-color: #fff;
+  color: #dc3558;
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.combo-rates {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-align: center;
+  font-size: 14px;
+  width: 52px;
+  z-index: 1;
+  color: #fff !important;
+}
+.combo-rates span.amount {
+  color: #fff !important;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  z-index: 1;
+  font-size: 12px;
+}
+.combo-rates .design {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 45px;
+  width: 0;
+  border-left: 26px solid rgba(0, 0, 0, 0.5);
+  border-right: 26px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 18px solid transparent;
+}
+.booking-summary {
+ padding: 10px 0;
+  background-color: #fff;
+  height: fit-content;
+}
+.booking-summary-col {
+  margin-top: 17px;
+  padding-top: 17px;
+  width: 30%;
+
+  height: fit-content;
+}
+.booking-summary-box {
+  padding: 0 18px;
+}
+.booking-summary-box h2 {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  text-align: left;
+  color: #c02c39;
+  margin-top: 10px;
+}
+.checkout-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-seat-details {
+  font-size: 14px;
+  color: #1f2533;
+  font-family: Roboto;
+  width: 75%;
+  display: inline-block;
+}
+.checkout-seat-rate {
+  font-size: 14px;
+  color: #1f2533;
+  font-family: Roboto;
+  width: 25%;
+  display: inline-block;
+}
+.accordion {
+  margin: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.accordion-box {
+  box-shadow: none !important;
+}
+.conven-fees {
+  width: 100%;
+  display: inline-flex;
+  gap: 25%;
+  justify-content: space-around;
+}
+.conven-fees-text {
+  display: inline-block;
+  font-size: 12px;
+  color: #1f2533;
+  font-family: Roboto;
+}
+.conven-fees-rate {
+  font-size: 14px;
+  color: #1f2533;
+  font-family: Roboto;
+  display: inline-block;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  flex-direction: row-reverse !important;
+  justify-content: space-between !important;
+  padding: 0 !important;
+}
+.accordion-details {
+  padding-bottom: 10px !important;
+  padding-left: 12px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+}
+.base-amount,
+.gst-amount {
+  display: flex;
+  justify-content: space-between;
+}
+.base-amount-text,
+.gst-amount-text {
+  max-width: 70%;
+  text-align: left;
+  font-size: 10px;
+  color: #969696;
+  font-size: 10px;
+  font-family: Roboto;
+  /* margin-left: 20px; */
+}
+.base-amount-rate,
+.gst-amount-rate {
+  font-size: 10px;
+  color: #969696;
+  font-size: 10px;
+  font-family: Roboto;
+  margin-right: 20px;
+}
+.sub-total {
+  display: flex;
+  justify-content: space-between;
+}
+.total-text {
+  font-size: 15px;
+  font-family: Roboto;
+}
+.total-rate {
+  font-size: 14px;
+  font-family: Roboto;
+  color: #1f2533;
+  margin-right: 12px;
+}
+.bas-logo {
+  display: flex;
+}
+.bas-logo img {
+  height: 4%;
+  width: 8%;
+}
+.bas-logo p {
+  margin-left: 5px;
+  color: #666;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.bas-div {
+  margin-top: 30px;
+  padding: 18px 11px;
+  background: #f5f5f5;
+}
+.bas-add-btn {
+  border: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #dc3558;
+  cursor: pointer;
+  float: right;
+}
+.bas-price {
+  margin-left: 14px;
+}
+.bas-price-rate {
+  margin-bottom: 10px;
+}
+.bas-note {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #525252;
+}
+.amount-pay {
+  background-color: #fffcdc;
+  padding: 15px 25px;
+  min-height: 50px;
+  margin-top: 4rem;
+}
+.amount-pay-text {
+  float: left;
+}
+.amount-pay-rate {
+  float: right;
+}
+.ticket-type {
+    padding: 0 20px;
+    margin: 15px 0;
+}
+.ticket-type h2 {
+
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+.ticket-type-div {
+    display: flex;
+}
+.m-ticket-checkout ,.office-pickup-logo {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    display: flex;
+}
+.office-pickup {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.m-ticket-logo i.fa-ticket,.office-pickup-logo i{
+    color: #DC3558;
+    font-size: 30px;
+    display: inline-block;
+}
+.m-ticket-logo span ,.office-pickup-logo span{
+    color: #999;
+    font-size: 11px;
+    display: inline-block;
+}
+.m-ticket-logo ,.office-pickup-logo {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+.ticket-radio {
+    margin-right: 21px;
+}
+.proceed-to-pay {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f84464;
+    color: #fff;
+    border-radius: 9px;
+    padding: 8px 8px;
+    cursor: pointer;
+}

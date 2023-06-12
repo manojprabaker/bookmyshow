@@ -1,0 +1,128 @@
+.seat-choosing-sec {
+  padding-top: 30px;
+}
+.seat-diamond p {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.seat-pearl {
+  margin: 2rem 0;
+}
+.seat-pearl p {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.avail-seats {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid #1ea83c;
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  color: #1ea83c;
+  text-align: center;
+  margin: 4px;
+  cursor: pointer;
+}
+.empty-seats {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 4px;
+  cursor: default;
+}
+.seat-row-letter {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.filled-seats {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  color: #1ea83c;
+  text-align: center;
+  margin: 4px;
+  background: #eee !important;
+  cursor: default;
+  color: #fff !important;
+  pointer-events: none;
+}
+.avail-seats:hover {
+  background: #1ea83c;
+  color: #fff;
+}
+.screen-area {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4.5rem;
+}
+.screen-area p.text {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+.screen-area .screen {
+  margin-top: 1rem;
+  border: 3px double #fffcfc;
+  width: 200px;
+  height: 17px;
+  background: #dae6fc;
+}
+.selected {
+  background: #1ea83c;
+  color: #fff;
+}
+.tickets-price-display {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+}
+.price-display-btn {
+  background: #f84464;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+padding: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.seat-design-pearl {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.seat-design-diamond {
+  white-space: nowrap;
+  overflow-x: auto;
+}

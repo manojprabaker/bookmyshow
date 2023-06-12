@@ -1,0 +1,255 @@
+.movies-page-sec {
+  background-color: rgb(26, 26, 26) !important;
+  font-family: Roboto;
+}
+
+.moviespage-row {
+  padding: 25px 15px;
+  display: flex;
+  gap: 4%;
+}
+.movies-poster img {
+  border-radius: 8px 8px 0 0;
+}
+.in-cinemas {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: rgb(255, 255, 255);
+  margin-top: -5px;
+  border-radius: 0 0 8px 8px;
+}
+
+.movie-poster-details h1 {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 42px;
+  margin-top: 2rem;
+}
+.movie-poster-details h2 i {
+  color: #f07584;
+}
+.movie-poster-details h2 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  margin: 18px 0;
+}
+.add-rating-review {
+  gap: 64px;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 17px 24px;
+  margin: 20px 0;
+  max-width: 446px;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+}
+.rating-btn {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+  padding: 8px 12px;
+  border: none;
+  color: rgb(51, 51, 51);
+}
+.rating-btn span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.add-rating p {
+  letter-spacing: 0.2px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.view-lang {
+  margin: 1.2rem 0;
+}
+.view-lang span {
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: rgb(229, 229, 229);
+  color: rgb(0, 0, 0);
+  padding: 2px 8px;
+  border-radius: 2px;
+
+  margin-top: 8px;
+  margin-left: 8px;
+}
+.run-time {
+  margin: 1.3rem 0;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.book-ticket {
+  margin-top: 2.2rem;
+}
+.book-ticket button {
+  cursor: pointer;
+  color: #fff;
+  background: #f84464;
+  border: none;
+  padding: 15px 61px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.about-movie h3,
+.top-offers h3,
+.cast h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+.about-movie p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(51, 51, 51);
+  padding-top: 16px;
+}
+.about-movie-sec {
+  margin-top: 3rem;
+  width: 75%;
+  font-family: Roboto;
+}
+.about-movie {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding-bottom: 16px;
+  margin-bottom: 2rem;
+}
+.offer-logo {
+  align-items: center;
+  display: flex;
+  width: 47%;
+  margin-top: 29px;
+  padding: 17px 18px;
+  border-radius: 10px;
+  background-image: url("data:image/svg+xml,%3csvg width=%27100%25%27 height=%27100%25%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3crect width=%27100%25%27 height=%27100%25%27 fill=%27none%27 rx=%278%27 ry=%278%27 stroke=%27%23FFD564FF%27 stroke-width=%273%27 stroke-dasharray=%274%2c10%27 stroke-dashoffset=%276%27 stroke-linecap=%27square%27/%3e%3c/svg%3e");
+  background-color: rgb(255, 241, 204);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.offer-details p:first-child {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.offer-details p {
+  color: rgb(102, 102, 102);
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.offer-row {
+  display: flex;
+}
+.offer-img {
+  width: 20%;
+}
+.offer-img img {
+  width: 50%;
+}
+.top-offers {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.cast-row img {
+  width: 65%;
+  border-radius: 50%;
+}
+.cast-row p:first-child {
+  color: rgb(0, 0, 0);
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.cast-row p:last-child {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.cast-row {
+  display: inline-block;
+  text-align: center;
+}
+.cast{
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+/*--------------- footer -------------- */
+
+
+.footer-logo-line {
+  width: 100%;
+  height: 1px;
+  background: rgb(93, 93, 95);
+}
+.social-icons {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.social-icons i {
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: #5d5d5f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333338;
+  margin: 0 5px;
+  border-radius: 21px;
+}
+.footer-copyright p {
+  text-align: center;
+  font-size: 11px;
+  color: rgb(127, 127, 127);
+}
+.footer-copyright {
+  padding: 2rem 0;
+}
+.footer-bottom {
+  background-color: #333338;
+}

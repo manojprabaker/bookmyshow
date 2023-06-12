@@ -1,0 +1,107 @@
+let date =new Date();
+let hrs = date.getHours();
+let mins = date.getMinutes();
+let theatreTimingList = [];
+console.log(hrs,mins);
+if (hrs < 10) {
+  theatreTimingList = [
+    {
+      timing1: "10:30 AM",
+    },
+    {
+      timing1: "02:30 PM",
+    },
+    {
+      timing1: "06:30 PM",
+    },
+    {
+      timing1: "10:30 PM",
+    },
+    
+  ];
+} else if (hrs == 10) {
+  if (mins < 30) {
+    theatreTimingList = [
+      {
+        timing1: "02:30 PM",
+      },
+      {
+        timing1: "06:30 PM",
+      },
+      {
+        timing1: "10:30 PM",
+      },
+    ];
+  } else {
+    theatreTimingList = [
+      {
+        timing1: "02:30 PM",
+      },
+      {
+        timing1: "06:30 PM",
+      },
+      {
+        timing1: "10:30 PM",
+      },
+    ]
+  }
+}
+else if(hrs<14)
+{
+  theatreTimingList = [
+    {
+      timing1: "02:30 PM",
+    },
+    {
+      timing1: "06:30 PM",
+    },
+    {
+      timing1: "10:30 PM",
+    },
+  ]
+  console.log("passed")
+}
+else if(hrs==14)
+{
+    theatreTimingList = [
+      {
+        timing1: "06:30 PM",
+      },
+      {
+        timing1: "10:30 PM",
+      },
+    ]
+    
+}
+else if(hrs<18){
+  theatreTimingList = [
+    {
+      timing1: "06:30 PM",
+    },
+    {
+      timing1: "10:30 PM",
+    },
+  ]
+}
+else if(hrs==18)
+{
+  theatreTimingList = [
+    {
+      timing1: "10:30 PM",
+    },
+  ]
+}
+else if(hrs>18){
+  theatreTimingList = [
+    {
+      timing4: "Please heck out movies timings for tommorow's day",
+    },
+  ]
+}
+else{
+
+}
+
+console.log(theatreTimingList);
+let ttt=2;
+export default ttt;

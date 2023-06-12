@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+}
+.live-events-title {
+    margin-bottom: 15px;
+    padding-top: 3rem;
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-left: 10px;
+}
+.live-events img{
+    border-radius: 8px;
+    width: 100%;
+}
+.live-events{
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+.live-events-sec {
+    padding-bottom: 2rem;
+    background: #f5f5f5;
+}

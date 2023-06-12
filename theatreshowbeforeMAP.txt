@@ -1,0 +1,31 @@
+ <div className="venue-box">
+              <div className="theatre-venue">
+                <div className="theatre-name-ticket">
+                <i class="fa-regular fa-heart"></i>
+                <span className="theatre-name">
+                    AGS Cinemas OMR:Navlur
+                </span>
+                <div className="theatre-icons">
+                  <span className="m-ticket"><i class="bi bi-phone"></i>
+                    M-Ticket
+                  </span>
+                  <span className="snacks-drinks"><i class="fa-solid fa-mug-hot"></i>
+                  Food & Beverages</span>
+                </div>
+                </div>
+              </div>
+              <div className="theatre-timings">
+                <div className="avail-show-timings">
+                    <div className="show-timings-box">
+                        <div className="timings">10:40 PM</div>
+                        <div className="theatre-atmos">
+                            4K DOLBY 7.1
+                        </div>                       
+                    </div>
+                    <div className="cancellations">
+                    <span class="gold-icon"></span>
+                    <span className="cancel-details">Non-cancellable</span>
+                    </div>
+                </div>
+              </div>
+            </div>

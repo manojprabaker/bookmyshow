@@ -1,0 +1,33 @@
+.movie-name-seat-page {
+  font-size: 15px;
+  color: #fff;
+  font-family: Roboto;
+}
+.movie-details-seat-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.seat-count-change-btn {
+  background-color: #1f2533;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  height: 26px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.seat-count-change-btn i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+.theatre-sec-seat-page{
+  background-color: #1f2533;
+  padding: 20px 0;
+}

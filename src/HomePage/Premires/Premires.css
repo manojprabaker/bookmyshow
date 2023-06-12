@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.premires-sec {
+    background: #2b3148;
+    padding-top: 2rem;
+}
+.premires-logo {
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.premires-logo img {
+    width: 100%;
+}
+h2.premires-title  {
+    margin-left: 10px;
+    word-break: break-word;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+}
+p.premires-title  {
+    margin-left: 10px;
+    word-break: break-word;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+}
+.premire-details .name{
+    margin: 0px 0px 4px;
+    word-break: break-word;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    
+}
+.premire-details .lang {
+   
+    word-break: break-word;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    
+}

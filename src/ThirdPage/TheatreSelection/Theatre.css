@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Roboto;
+}
+.theatre-sec {
+  padding-top: 40px;
+  background-color: #333545;
+}
+.movie-name {
+  color: #f4f4f4;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.movie-name {
+  color: #f4f4f4;
+}
+.movie-genre {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  background: 0 0;
+  padding: 2px 8px;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+}
+.movie-category{
+    margin-top: 10px ;
+    padding-bottom: 20px;
+}
+.movie-dates {
+  border-radius: 6px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+ 
+}
+div.main-date-row:first-of-type {
+  padding-left: 4px;
+  background-color: #f84464;
+  border-radius: 6px;
+  color: #fff !important;
+}
+div.main-date-row{
+  color: #666 !important;
+}
+.movie-date-day {
+  padding: 2px 16px;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.movie-date-date {
+  padding: 1px 17px;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.movie-date-month{
+  padding: 1px 16px;
+  font-size: 10px;
+  font-family: Roboto;
+  
+  font-weight: 500;
+}
+.date-row {
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+.cont-theatre{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.date-selection-sec{
+  border-bottom: 1px solid #eceef1;
+}
+.movie-lang-theatre{
+  padding: 25px;
+  margin-right: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    border-left: 1px solid #eceef1;
+    border-right: 1px solid #eceef1;
+    box-shadow: inset 0 -3px 0 0 #f84464;
+}

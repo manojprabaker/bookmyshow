@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+}
+.theatreshow-sec {
+  padding: 12px 0;
+  background-color: #f2f2f2;
+}
+.margin-div {
+  background-color: #fff;
+}
+.legends-container {
+  justify-content: end;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 12px 0;
+}
+.showtimes-legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.legend-icon {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #4abd5d;
+  margin-right: 8px;
+}
+.legend-text {
+  color: #717171;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.legend-icon.fast {
+  background-color: #f60;
+}
+
+.subtitle {
+  color: #4abd5d;
+  margin-right: 8px;
+  position: relative;
+  border: 0.8px solid #4abd5d;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  height: 12px;
+  justify-content: center;
+  display: flex;
+  padding: 1px 1px 0;
+  align-items: center;
+  width: 22px;
+}
+.gold-icon {
+  width: 7px;
+  height: 7px;
+  background: #ffc610;
+  border-radius: 50%;
+}
+.cancel-detail {
+  margin: 0 8px;
+  color: #6c6c6c;
+}
+.venue-box {
+  padding-top: 16px;
+  display: flex;
+  gap: 9%;
+}
+.movie-venue {
+  border-bottom: 1px solid #c9c6c6;
+}
+.theatre-name-ticket i {
+  color: #a6a6a6;
+  margin-left: 10px;
+}
+.theatre-name {
+  word-spacing: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 15px;
+}
+.m-ticket {
+  color: #49ba8e;
+  font-size: 12px;
+  font-family: Roboto;
+  margin-left: 24px;
+  padding-top: 20px;
+  display: inline-block;
+}
+.m-ticket i {
+  color: #49ba8e;
+  font-size: 15px;
+}
+.snacks-drinks {
+  color: #ffa426;
+  font-size: 12px;
+  font-family: Roboto;
+  margin-left: 20px;
+}
+.snacks-drinks i {
+  color: #ffa426;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.show-timings-box {
+  cursor: pointer;
+  font-size: 12px;
+  margin: 20px 0;
+  border: 1px solid #999;
+  color: #4abd5d;
+  padding: 0 23px;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cancellations .gold-icon {
+  width: 7px;
+  height: 7px;
+  background: #ffc610;
+  display: inline-block;
+}
+.cancel-details {
+  font-size: 12px;
+  margin: 0 8px;
+  color: #6c6c6c;
+  font-family: Roboto;
+}
+.cancellations {
+  margin-bottom: 12px;
+}
+.avail-show-timings {
+  display: flex;
+  gap: 32px;
+}
+.theatre-venue {
+  width: 30%;
+}
+.theatre-name-ticket {
+  padding-left: 12px;
+}
+.theatre-atmos {
+  font-size: 11px;
+}
+.timings {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/*--------------- footer -------------- */
+
+.footer-logo-line {
+  width: 100%;
+  height: 1px;
+  background: rgb(93, 93, 95);
+}
+.social-icons {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.social-icons i {
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: #5d5d5f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333338;
+  margin: 0 5px;
+  border-radius: 21px;
+}
+.footer-copyright p {
+  text-align: center;
+  font-size: 11px;
+  color: rgb(127, 127, 127);
+}
+.footer-copyright {
+  padding: 2rem 0;
+}
+.footer-bottom {
+  background-color: #333338;
+}
+
+/* --------------------popup------------------- */
+#customized-dialog-title {
+  text-align: center;
+}
+.seat-content {
+  border-top: none !important;
+}
+
+.seat-count-number {
+  margin: 3rem 0;
+  text-align: center;
+}
+.seat-content div img {
+  width: 25%;
+}
+.seat-count-number span {
+  margin: 0 10px;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.seat-count-number span:hover {
+  color: #fff;
+  background: #f84464;
+  border-radius: 50px;
+}
+.seat-count-vehicle {
+  text-align: center;
+}
+.clicked-seat-no{
+  color: #fff;
+  background: #f84464;
+  border-radius: 50px;
+}
+
+.seat-nos{
+  display: inline-block;
+}
+
+/* div.seat-nos:nth-child(2){
+  color: #fff;
+  background: #f84464;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+} */
+.tickets-rates-box {
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.diamond-ticket .category,.pearl-ticket .category{
+  font-size: 12px;
+  color: #666;
+  display: block;
+  text-align: center;
+}
+.diamond-ticket  .ticket-rate,.pearl-ticket  .ticket-rate{
+  font-weight: 700;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+}
+.diamond-ticket  .avail ,.pearl-ticket  .avail {
+  color: #2ec492;
+  font-size: 12px;
+  text-align: center;
+}
+.pearl-ticket .avail {
+     color: #2ec492;
+    font-size: 12px;
+    text-align: center;
+}
+.select-seat-confirm{
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.select-seatBtn {
+  background: #f84464;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 8px rgba(0,0,0,.16);
+  width: 75%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
