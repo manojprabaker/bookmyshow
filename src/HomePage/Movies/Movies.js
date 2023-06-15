@@ -7,9 +7,11 @@ import Container from "@mui/material/Container";
 import MoviesList from "./MoviesList.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import {  useSelector } from 'react-redux'
  class Responsive extends Component {
-  
+  constructor(props) {
+    super(props);
+  }
   render() {
     var settings = {
       dots: false,
@@ -50,14 +52,32 @@ import "slick-carousel/slick/slick-theme.css";
       console.log(id)
       this.props.navigate(`/MoviesPage?id=${id}`);
     }
+   let searchVal=this.props.ee;
+   let res;
+   let searchedList=MoviesList.filter((e)=>{
+    
+    if(res =e.name.toLowerCase().startsWith(searchVal))
+    {
+     
+      return e
+    }
+    else{
+      console.log("absent");
+     return null
+    }
+   })
+   console.log(searchedList);
+  
     return (
       <div className="recom-movies">
         <Container sx={{ maxWidth: "95%" }} maxWidth={false}>
           <h2 className="title" > Recommended Movies </h2>
-          <Slider {...settings}>
-            {MoviesList.map((ml,index) => {
+          <Slider {...settings}></Slider>
+          <div className="movies-box-row">
+            {searchedList.map((ml,index) => {
               return ( 
-                <Grid className="box" key={index}>
+               
+                <div className="box" key={index}>
                   <div className="img-box" onClick={()=>{goNext(ml.id)}} >
                     <img src={ml.src} alt="movies" />
                   </div>
@@ -69,10 +89,12 @@ import "slick-carousel/slick/slick-theme.css";
                     <h3 className="name">{ml.name}</h3>
                     <p className="genre">{ml.genre}</p>
                   </div>
-                </Grid>
+                </div>
+                
               );
             })}
-          </Slider>
+            </div>
+          
           {/* -----------slider-end---------------- */}
           <div className="stream-movie">
             <img
@@ -91,8 +113,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Movies = (props) => {
   const navigate=useNavigate();
+ let ee=props.dataFromNav;
+ console.log(ee);
+  let search=(data)=>{
+    return data;
+  }
+
   return (
-    <div><Responsive navigate={navigate} /></div>
+    <div><Responsive navigate={navigate} ee={ee}/></div>
   )
 }
 

@@ -10,14 +10,21 @@ import OnlineEvents from "./OnlineEvents/OnlineEvents.js"
 import OutdoorEvents from "./OutdoorEvents/OutdoorEvents.js";
 import GamesSports from "./GamesSportsEvents/GamesSports.js";
 import Footer from "./Footer/Footer.js"
-
+import { useState } from 'react'
 const HomePage = () => {
+  const [dataNav, setdataNav] = useState("")
+  const parentFn=(val)=>{
+   // console.log("parentFn");
+    let dataFromNav1=val;
+    setdataNav(dataFromNav1)
+    //console.log(dataFromNav1);
+  }
   return (
     <div>
-    <Navbar/>
+    <Navbar parentFn={parentFn}/>
     <NavBarBottom/>
     <Banner/>
-    <Movies/>
+    <Movies dataFromNav={dataNav}/>
     <LiveEvents/>
     <Premires/>
     <EventsNearBy/>

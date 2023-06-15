@@ -227,13 +227,13 @@ body {
 .seat-count-vehicle {
   text-align: center;
 }
-.clicked-seat-no{
+.clicked-seat-no {
   color: #fff;
   background: #f84464;
   border-radius: 50px;
 }
 
-.seat-nos{
+.seat-nos {
   display: inline-block;
 }
 
@@ -254,29 +254,32 @@ body {
   align-items: center;
   gap: 20px;
 }
-.diamond-ticket .category,.pearl-ticket .category{
+.diamond-ticket .category,
+.pearl-ticket .category {
   font-size: 12px;
   color: #666;
   display: block;
   text-align: center;
 }
-.diamond-ticket  .ticket-rate,.pearl-ticket  .ticket-rate{
+.diamond-ticket .ticket-rate,
+.pearl-ticket .ticket-rate {
   font-weight: 700;
   color: #333;
   font-size: 12px;
   text-align: center;
 }
-.diamond-ticket  .avail ,.pearl-ticket  .avail {
+.diamond-ticket .avail,
+.pearl-ticket .avail {
   color: #2ec492;
   font-size: 12px;
   text-align: center;
 }
 .pearl-ticket .avail {
-     color: #2ec492;
-    font-size: 12px;
-    text-align: center;
+  color: #2ec492;
+  font-size: 12px;
+  text-align: center;
 }
-.select-seat-confirm{
+.select-seat-confirm {
   text-align: center;
   margin-top: 0.7rem;
   margin-bottom: 0.5rem;
@@ -288,9 +291,46 @@ body {
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 1px 8px rgba(0,0,0,.16);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
   width: 75%;
   border: none;
   font-size: 16px;
   font-weight: 500;
+}
+/* ::selection {
+  color: #2ec492;
+  background: transparent;
+} */
+@media (min-width: 320px) and (max-width: 670px) {
+  .venue-box {
+    display: block;
+  }
+  .theatre-venue {
+    width: 100%;
+  }
+  .show-timings-box {
+    padding: 0;
+    width: 30%;
+    margin: 20px 12px;
+  }
+  .seat-count-number span {
+    margin: 0px 4px;
+  }
+  .seat-nos {
+    margin: 11px 0;
+  }
+  .avail-show-timings {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0;
+  }
+}
+@media (max-width: 980px) and (min-width: 670px) {
+  .show-timings-box {
+    width: 36%;
+  }
+  .avail-show-timings {
+    flex-wrap: wrap;
+    display: flex;
+  }
 }

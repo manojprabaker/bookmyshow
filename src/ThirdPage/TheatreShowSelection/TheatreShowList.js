@@ -245,12 +245,80 @@ let theatreNamelist = [
     id:5,
     name:"INOX: LUXE Phoenix Market City, Velachery",
   },
-  {
+  { 
     id:5,
     name:"Rohini Silver Screens: Koyambedu",
   },
   {
     id:5,
+    name:"PVR: VR Chennai, Anna Nagar",
+  },
+  {
+    id:6,
+    name:"GK Cinemas RGB + Laser SRL 4D: Porur",
+  },
+  {
+    id:6,
+    name:"Cinepolis: BSR Mall, OMR, Thoraipakkam",
+  },
+  {
+    id:6,
+    name:"EVP Cinemas: Chennai",
+  },
+  {
+    id:6,
+    name:"INOX: LUXE Phoenix Market City, Velachery",
+  },
+  {
+    id:6,
+    name:"SPI Palazzo: Nexus Vijaya Mall, Vadapalani,Chennai",
+  },
+  {
+    id:6,
+    name:"INOX: LUXE Phoenix Market City, Velachery",
+  },
+  {
+    id:7,
+    name:"INOX National: Arcot Road",
+  },
+  {
+    id:7,
+    name:"GK Cinemas RGB + Laser SRL 4D: Porur",
+  },
+  {
+    id:7,
+    name:"INOX: LUXE Phoenix Market City, Velachery",
+  },
+  { 
+    id:7,
+    name:"Rohini Silver Screens: Koyambedu",
+  },
+  {
+    id:7,
+    name:"PVR: VR Chennai, Anna Nagar",
+  },
+  {
+    id: 8,
+    name: "MAYAJAAL Multiplex: ECR, Chennai",
+  },
+  {
+    id:8,
+    name:"INOX National: Arcot Road",
+  },
+  {
+    id:8,
+    name:"GK Cinemas RGB + Laser SRL 4D: Porur",
+  },
+  {
+    id:8,
+    name:"INOX: LUXE Phoenix Market City, Velachery",
+  },
+  {
+    id:8,
+    name:"Rohini Silver Screens: Koyambedu",
+  },
+  {
+    id:8,
     name:"PVR: VR Chennai, Anna Nagar",
   },
 ];

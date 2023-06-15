@@ -3,7 +3,7 @@ let dd = date.getDate();
 let dd1;
 let dd2; 
 let dm = date.getMonth();
- 
+  
 if (
   dm == 0 ||
   dm == 2 ||
@@ -185,13 +185,23 @@ if (dDay1 >= 6) {
   dDay1 = days[dDay1];
 }
 
-let dDay2 = date.getDay() + 2;
-
-if (dDay2 >= 6) {
-  dDay2 = days[1];
-} else {
-  dDay2 = days[dDay2];
-}
+let dDay22= new Date();
+dDay22.setDate(`${dDay22.getDate()+2}`);
+//console.log(dDay22.getDay());
+let dDay2=days[dDay22.getDay()]
+// if(dDay2 == 5)
+// {
+// 	dDay2 = days[5];
+// }
+// else if(dDay2==6)
+// {
+// 	dDay2 = days[6];
+// }
+// if (dDay2 >= 6) {
+//   dDay2 = days[1];
+// } else {
+//   dDay2 = days[dDay2];
+// }
 
 let movieDates = [
   {
@@ -203,7 +213,7 @@ let movieDates = [
     day: dDay1,
     date: dd1,
     mon: dm1,
-  },
+  }, 
   {
     day: dDay2,
     date: dd2,
@@ -248,6 +258,24 @@ let movieNamesGenre = [
     genre: "Romance",
     genre1: "Drama",
   },
+  {
+    id: 6,
+    name: "The Little Mermaid",
+    genre: "Action",
+    genre1: "Fantasy",
+  },
+  {
+    id: 7,
+    name: "Guardians of the Galaxy Vol. 3",
+    genre: "Action",
+    genre1: "Sci-Fi",
+  },
+  {
+    id: 8,
+    name: "IB71",
+    genre: "Period",
+    genre1: "Thriller",
+  },
 ];
 
 export { movieNamesGenre };
@@ -258,53 +286,7 @@ let theatreShowList = [
     name: "AGS Cinemas OMR: Navlur",
   },
 ];
-// let hrs = date.getHours();
-// let mins = date.getMinutes();
-// let theatreTimingList = [];
-// console.log(hrs,mins);
-// if (hrs < 10) {
-//   theatreTimingList = [
-//     {
-//       timing1: "10:30 AM",
-//     },
-//     {
-//       timing1: "02:30 PM",
-//     },
-//     {
-//       timing1: "06:30 PM",
-//     },
-//     {
-//       timing1: "10:30 PM",
-//     },
-    
-//   ];
-// } else if (hrs == 10) {
-//   if (mins < 30) {
-//     theatreTimingList = [
-//       {
-//         timing1: "02:30 PM",
-//       },
-//       {
-//         timing1: "06:30 PM",
-//       },
-//       {
-//         timing1: "10:30 PM",
-//       },
-//     ];
-//   } else {
-//     theatreTimingList = [
-//       {
-//         timing1: "02:30 PM",
-//       },
-//       {
-//         timing1: "06:30 PM",
-//       },
-//       {
-//         timing1: "10:30 PM",
-//       },
-//     ]
-//   }
-// }
+
 // else if(hrs<14)
 // {
 //   theatreTimingList = [

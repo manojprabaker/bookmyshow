@@ -27,7 +27,25 @@
   font-size: 10px;
   margin-left: 5px;
 }
-.theatre-sec-seat-page{
+.theatre-sec-seat-page {
   background-color: #1f2533;
   padding: 20px 0;
+}
+p.theatre-name-seat-page {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #c6c6c9;
+}
+p.theatre-time-seat-page {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #c6c6c9;
+  margin-left: 8px;
+}
+@media (min-width: 320px) and (max-width: 670px) {
+  .movie-details-seat-page {
+    display: block;
+  }
 }

@@ -11,6 +11,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useSelector, useDispatch } from "react-redux";
+
 const CheckOut = () => {
   const [smileText, setsmileText] = useState("Remove");
   const [subTotalSt, setsubTotal] = useState(0);
@@ -20,7 +21,8 @@ const CheckOut = () => {
   //let seatCategory = searchParams.get("seatCategory");
 
    // ---------------redux----------------
-   const dispatch = useDispatch();
+   const dispatch = useDispatch(); 
+   const navigate=useNavigate();
    const state = useSelector(({ data }) => data);
     let finalseatArr= state.seatNosarr;
    let finalseatCount=finalseatArr.length;
@@ -129,24 +131,30 @@ const CheckOut = () => {
         }
       },
       "handler": function (response) {
-        alert(response.razorpay_payment_id);
+        //alert(response.razorpay_payment_id);
+        navigate(`/`);
       },
       "modal": {
         "ondismiss": function () {
           if (window.confirm("Are you sure, you want to close the form?")) {
             var txt = "You pressed OK!";
-            console.log("Checkout form closed by the user");
+            console.log("Checkout form closed by the user")
+            navigate(`/`);;
           } else {
             txt = "You pressed Cancel!";
             console.log("Complete the Payment")
+            navigate(`/`);
           }
         }
       }
-    };
+    }; 
+    
     var rzp1 = new window.Razorpay(options);
     const payviaRazor=(e)=>{
+      e.preventDefault();
       rzp1.open();
-    e.preventDefault();
+      
+   
     }
   return (
     <div>

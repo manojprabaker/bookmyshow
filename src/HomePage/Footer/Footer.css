@@ -105,3 +105,15 @@ body {
 .footer-copyright {
   padding: 2rem 0;
 }
+@media (min-width:320px) and (max-width:670px) {
+  .footer-top {
+   
+    display: block;
+  }
+  .footer-top-inner {
+    display: none; 
+  }
+  .footer-img,.footer-contact{
+    display: none; 
+  }
+}

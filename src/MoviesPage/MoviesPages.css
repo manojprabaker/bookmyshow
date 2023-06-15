@@ -205,14 +205,13 @@
   display: inline-block;
   text-align: center;
 }
-.cast{
+.cast {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 /*--------------- footer -------------- */
-
 
 .footer-logo-line {
   width: 100%;
@@ -252,4 +251,34 @@
 }
 .footer-bottom {
   background-color: #333338;
+}
+@media (min-width: 320px) and (max-width: 670px) {
+  .moviespage-row {
+    display: block;
+  }
+  .movies-poster img {
+    width: 100%;
+  }
+  .row-bg {
+    background: none !important;
+  }
+  .add-rating-review {
+    display: block;
+  }
+  .add-rating {
+    margin: 1rem 0;
+  }
+  .book-ticket {
+    text-align: center;
+  }
+  .about-movie-sec {
+    width: 100%;
+  }
+  .offer-logo {
+    width: 100%;
+  }
+  .cast {
+    text-align: center;
+   
+}
 }

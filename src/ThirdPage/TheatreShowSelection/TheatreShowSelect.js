@@ -25,6 +25,9 @@ import SmallCar from "./smallcar.jpg"
 import SedanCar from "./sedanCar.jpg"
 import Bus from "./bus.png";
 import popupList from "./PopupList";
+import { useSelector,useDispatch } from 'react-redux'
+import { updatetheatreNameTime,updateshowTime } from "../../Store/Slice";
+
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -33,7 +36,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     padding: theme.spacing(1),
   },
 }));
-
+ 
 function BootstrapDialogTitle(props) {
   const { children, onClose, ...other } = props;
 
@@ -72,8 +75,9 @@ const TheatreShowSelect = (props) => {
   const [flag,setFlag]=useState(0);
   const[clickCount,setClickCount]=useState();
   const [clickedItem, setClickedItem] = useState(null);
-
+  const [theatreName, settheatreName] = useState("")
   const navigate = useNavigate();
+  const dispatch=useDispatch();
   let id = props.sp;
   let theatreListUpdated = theatreNamelist.filter((e) => {
     return e.id == id;
@@ -134,14 +138,18 @@ const TheatreShowSelect = (props) => {
  }
   const goNextPage=()=>{
     let noS=clickedItem;
-    navigate(`/SeatBookingFullPage?noS=${noS}`);
+    navigate(`/SeatBookingFullPage?noS=${noS}&id=${id}`);
   }
   //---------------------POP-UP----------------
   
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = (namess,timingss) => {
     setOpen(true);
+    
+    //settheatreName(namess);
+    dispatch(updatetheatreNameTime(namess))
+    dispatch(updateshowTime(timingss))
   };
   const handleClose = () => {
     setOpen(false);
@@ -196,7 +204,7 @@ const TheatreShowSelect = (props) => {
                       <div className="avail-show-timings">
                         {theatreTimingList.map((e) => {
                           return (
-                            <div className="show-timings-box" onClick={handleClickOpen}>
+                            <div className="show-timings-box" onClick={()=>{handleClickOpen(tlu.name,e.timings)}}>
                               <div className="timings">{e.timings}</div>
                               <div className="theatre-atmos">4K DOLBY 7.1</div>
                             </div>

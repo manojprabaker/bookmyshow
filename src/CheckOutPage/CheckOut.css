@@ -15,7 +15,7 @@
   display: flex;
 }
 .snacks {
-  width: 75%;
+  width: 65%;
 }
 .fnb-container {
   background: #fff;
@@ -144,16 +144,16 @@
   border-bottom: 18px solid transparent;
 }
 .booking-summary {
- padding: 10px 0;
+  padding: 10px 0;
   background-color: #fff;
-  height: fit-content;
+ 
 }
 .booking-summary-col {
-  margin-top: 17px;
-  padding-top: 17px;
-  width: 30%;
 
-  height: fit-content;
+  padding-top: 17px;
+  width: 35%;
+  height: -moz-fit-content;
+
 }
 .booking-summary-box {
   padding: 0 18px;
@@ -258,9 +258,10 @@
   font-size: 14px;
   font-family: Roboto;
   color: #1f2533;
-  margin-right: 12px;
+  margin-right: 25px;
 }
 .bas-logo {
+  justify-content: space-around;
   display: flex;
 }
 .bas-logo img {
@@ -313,11 +314,10 @@
   float: right;
 }
 .ticket-type {
-    padding: 0 20px;
-    margin: 15px 0;
+  padding: 0 20px;
+  margin: 15px 0;
 }
 .ticket-type h2 {
-
   font-size: 14px;
   color: #999;
   letter-spacing: 2px;
@@ -327,43 +327,113 @@
   font-weight: 400;
 }
 .ticket-type-div {
-    display: flex;
+  display: flex;
 }
-.m-ticket-checkout ,.office-pickup-logo {
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    display: flex;
+.m-ticket-checkout,
+.office-pickup-logo {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  display: flex;
 }
 .office-pickup {
-    display: flex;
-    width: 50%;
-    align-items: center;
+  display: flex;
+  width: 50%;
+  align-items: center;
 }
-.m-ticket-logo i.fa-ticket,.office-pickup-logo i{
-    color: #DC3558;
-    font-size: 30px;
-    display: inline-block;
+.m-ticket-logo i.fa-ticket,
+.office-pickup-logo i {
+  color: #dc3558;
+  font-size: 30px;
+  display: inline-block;
 }
-.m-ticket-logo span ,.office-pickup-logo span{
-    color: #999;
-    font-size: 11px;
-    display: inline-block;
+.m-ticket-logo span,
+.office-pickup-logo span {
+  color: #999;
+  font-size: 11px;
+  display: inline-block;
 }
-.m-ticket-logo ,.office-pickup-logo {
-    gap: 16px;
-    display: flex;
-    align-items: center;
+.m-ticket-logo,
+.office-pickup-logo {
+  gap: 16px;
+  display: flex;
+  align-items: center;
 }
 .ticket-radio {
-    margin-right: 21px;
+  margin-right: 21px;
 }
 .proceed-to-pay {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f84464;
+  color: #fff;
+  border-radius: 9px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 670px) {
+  .snacks {
+    display: none;
+  }
+  .checkout-seat-rate {
+    width: 30%;
+    float: right;
+    display: block;
+}
+.accordion {
+  margin-top: 20px ;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+  .booking-summary-col {
+    width: 100%;
+  }
+  .conven-fees {
+    gap: 20%;
+  }
+  .total-rate {
+    margin-right: 0px;
+}
+  .amount-pay {
+    padding: 13px 5px;
+  }
+  .checkout-ticket {
+    display: block;
+}
+.checkout-seat-details {
+  font-size: 12px;
+}
+.bas-price-rate {
+  font-size: 13px !important;
+  margin-bottom: 10px;
+}
+}
+@media (max-width:980px) and (min-width:670px)  {
+  .snacks {
+    display: none;
+  }
+  .checkout-seat-rate {
+    width: 17%;
+}
+  .booking-summary-col {
+    width: 100%;
+  }
+  .conven-fees {
+   
     justify-content: space-between;
-    background-color: #f84464;
-    color: #fff;
-    border-radius: 9px;
-    padding: 8px 8px;
-    cursor: pointer;
+}
+.conven-fees-rate {
+  margin-right: 45px;
+}
+  .amount-pay {
+    padding: 13px 5px;
+  }
+  .total-rate {
+    margin-right: 47px;
+}
+.bas-logo {
+  justify-content: space-around;
+  display: flex;
+}
 }

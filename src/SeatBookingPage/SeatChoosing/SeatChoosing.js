@@ -17,7 +17,7 @@ import theatreSeatDetails from "../TheatreSeatDetails/TheatreSeatDetailsList.js"
 import PoupList from "../TheatreSeatDetails/PopupList.js";
 import { useSelector,useDispatch } from 'react-redux'
 import { updatePrice,updateArr,updateSeatCategory } from "../../Store/Slice";
-
+import MoviesList from "../../HomePage/Movies/MoviesList";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -73,12 +73,16 @@ const SeatChoosing = (props) => {
   const [seatFinalObj, setseatFinalObj] = useState([])
 
   const dispatch=useDispatch();
-  // const state=useSelector(({data})=>data)
-  // console.log("redux",state);
-  
+  const state=useSelector(({data})=>data)
+ let theatreNameTime= state.theatreNameTime;
+  let showTime=state.showTime;
   const navigate = useNavigate();
+ 
   let SeatcountsfromlastPage=props.noS;
-
+    let id1=props.id1;
+    //console.log(id1);
+    let updatedMoviesList=MoviesList.filter((e)=>{return e.id==id1})
+    updatedMoviesList=updatedMoviesList[0];
  useEffect(()=>{
   setNoOfSeats(SeatcountsfromlastPage);
 }, [])
@@ -290,10 +294,7 @@ const SeatChoosing = (props) => {
    
     setseatFinalObj(seatObj);
     navigate(`/CheckOut`);
-  //  navigate({
-  //   pathname:"/CheckOut",
-  //   search:`?seatCategory=${seatCategory}&price=${payRs}&seatNos=${finalSeats}`
-  //  })
+  
   }
   return (
     <div>
@@ -303,7 +304,9 @@ const SeatChoosing = (props) => {
             return (
               <div className="movie-details-seat-page">
                 <div>
-                  <p className="movie-name-seat-page">{mng.name}</p>
+                  <p className="movie-name-seat-page">{updatedMoviesList.name}</p>
+                  <p className="theatre-name-seat-page">{theatreNameTime}</p>
+                  <p className="theatre-time-seat-page">{showTime}</p>
                 </div>
                 <div>
                   <button
@@ -314,13 +317,8 @@ const SeatChoosing = (props) => {
                     {noOfSeats} Tickets <i class="fa-solid fa-pen"></i>
                   </button>
                 </div>
-                {/* <div className="movie-category">
-                  <span className="movie-genre">{mng.genre}</span>
-                  <span className="movie-genre">{mng.genre1}</span>
-                  {mng.hasOwnProperty('genre2') && <span className="movie-genre">{mng.genre2}</span>}
-                  {mng.hasOwnProperty('genre3') && <span className="movie-genre">{mng.genre3}</span>}
-                  {/* <span className="movie-genre">{mng.hasOwnProperty("genre2")?{mng.genre2}.null}</span> */}
-                {/* </div> */}
+                
+              
               </div>
             );
           })}

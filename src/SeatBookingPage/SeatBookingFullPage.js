@@ -5,10 +5,11 @@ import { useSearchParams } from "react-router-dom";
 const SeatBookingFullPage = (props) => {
   const [searchParams] = useSearchParams();
   let noS = searchParams.get("noS");
- // let noS=props.noS
+ let id1=searchParams.get("id");
+
   return (
     <div>
-        <SeatChoosing noS={noS}/>
+        <SeatChoosing noS={noS} id1={id1}/>
         
     </div>
   )

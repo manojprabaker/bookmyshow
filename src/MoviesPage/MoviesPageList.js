@@ -118,5 +118,88 @@ let MoviesPageList = [
     actorimg2:
       "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/trisha-krishnan-15856-18-09-2017-06-05-18.jpg",
   },
+  {
+    id: 6,
+    src: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-little-mermaid-et00058086-1678711953.jpg",
+    name: "The Little Mermaid",
+    star: <i class="bi bi-star-fill"></i>,
+    rating: "7/10 9.8K Votes",
+    runTime: `2h 15m
+    •
+    Adventure
+    ,
+    Family
+    ,
+    Fantasy
+    •
+    U
+    •
+    26 May, 2023`,
+    bg: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/the-little-mermaid-et00058086-1678711953.jpg",
+    movieAbout:
+      "The Little Mermaid is the beloved story of Ariel, a beautiful and spirited young mermaid with a thirst for adventure. The youngest of King Triton`s daughters and the most defiant, Ariel longs to find out more about the world beyond the sea and, while visiting the surface, falls for the dashing Prince Eric. While mermaids are forbidden to interact with humans, Ariel must follow her heart. She makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land but ultimately places her life-and her father`s crown-in jeopardy",
+    actorName: "Blake Harrison",
+    actorName2: "Colleen Halsey",
+    actorimg:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/blake-harrison-1045644-24-03-2017-17-35-23.jpg",
+    actorimg2:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/colleen-halsey-iein102404-27-04-2017-18-37-38.jpg",
+  },
+  {
+    id: 7,
+    src: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/guardians-of-the-galaxy-vol-3-et00310794-1683529214.jpg",
+    name: "Guardians of the Galaxy Vol. 3",
+    star: <i class="bi bi-star-fill"></i>,
+    rating: "8.9/10 50.8K Votes",
+    runTime: `2h 30m
+    •
+    Action
+    ,
+    Adventure
+    ,
+    Comedy
+    ,
+    Sci-Fi
+    •
+    UA
+    •
+    5 May, 2023`,
+    bg: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/guardians-of-the-galaxy-vol-3-et00310794-1683529214.jpg",
+    movieAbout:
+      "Our beloved band of misfits are settling into life on Knowhere. But it isn`t long before their lives are upended by the echoes of Rocket`s turbulent past. Peter Quill, still reeling from the loss of Gamora, must rally his team around him on a dangerous mission to save Rocket`s life - a mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+    actorName: "Chris Pratt",
+    actorName2: "Zoe Saldana",
+    actorimg:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/chris-pratt-12677-24-03-2017-12-35-43.jpg",
+    actorimg2:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/zoe-saldana-3261-13-10-2017-03-54-34.jpg",
+  },
+  {
+    id: 8,
+    src: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ib71-et00312966-1683884508.jpg",
+    name: "IB71",
+    star: <i class="bi bi-star-fill"></i>,
+    rating: "8.4/10 16.8K Votes",
+    runTime: `1h 59m
+    •
+    Action
+    ,
+    Period
+    ,
+    Thriller
+    •
+    UA
+    •
+    12 May, 2023`,
+    bg: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/ib71-et00312966-1683884508.jpg",
+    movieAbout:
+      "IB71, a patriotic spy thriller, is an untold story based on true events where IB agent Dev Jammwal (Vidyut Jammwal) is on a top secret mission to save the nation.",
+    actorName: "Vidyut Jammwal",
+    actorName2: "Anupam Kher",
+    actorimg:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vidyut-jamwal-30657-24-03-2017-13-55-31.jpg",
+    actorimg2:
+      "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/anupam-kher-211-09-10-2017-04-27-29.jpg",
+  },
 ];
 export default MoviesPageList;
